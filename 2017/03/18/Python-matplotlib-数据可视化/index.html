@@ -116,18 +116,18 @@
 <meta property="og:site_name" content="AbsentM&#39;s Notes">
 <meta property="og:description" content="引言这篇记载一下 Python 环境下使用 matplotlib 绘制各种曲线图的用法，阅读这篇文章你将会获得如下内容：  matplotlib 及环境配置。 一幅数据绘图的结构都是如何组成的，与 matplotlib 相关的名称是如何对应的？ 常见的数据绘图都包含哪些，以及是如何绘制的？  你可能需要的先前技能如下：  Python 开发环境及 matplotlib 工具包 Python 基础语">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://o8zyn0sct.qnssl.com/Python_Figure_Structure.png">
-<meta property="og:image" content="https://o8zyn0sct.qnssl.com/figure.png">
-<meta property="og:image" content="https://o8zyn0sct.qnssl.com/colormaps.png">
-<meta property="og:image" content="https://o8zyn0sct.qnssl.com/line_style.png">
-<meta property="og:image" content="https://o8zyn0sct.qnssl.com/marks.png">
-<meta property="og:image" content="https://o8zyn0sct.qnssl.com/legend.png">
-<meta property="og:image" content="https://o8zyn0sct.qnssl.com/bar.png">
-<meta property="og:updated_time" content="2017-11-21T11:44:44.744Z">
+<meta property="og:image" content="https://github.com/absentm/gitRes/blob/master/NotePics/Python_Figure_Structure.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/figure.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/colormaps.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/line_style.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/marks.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/legend.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/bar.png">
+<meta property="og:updated_time" content="2019-07-22T09:51:26.135Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python matplotlib 数据可视化">
 <meta name="twitter:description" content="引言这篇记载一下 Python 环境下使用 matplotlib 绘制各种曲线图的用法，阅读这篇文章你将会获得如下内容：  matplotlib 及环境配置。 一幅数据绘图的结构都是如何组成的，与 matplotlib 相关的名称是如何对应的？ 常见的数据绘图都包含哪些，以及是如何绘制的？  你可能需要的先前技能如下：  Python 开发环境及 matplotlib 工具包 Python 基础语">
-<meta name="twitter:image" content="https://o8zyn0sct.qnssl.com/Python_Figure_Structure.png">
+<meta name="twitter:image" content="https://github.com/absentm/gitRes/blob/master/NotePics/Python_Figure_Structure.png">
 
 
 
@@ -410,7 +410,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2017-11-21 19:44:44" itemprop="dateModified" datetime="2017-11-21T19:44:44+08:00">2017-11-21</time>
+                <time title="Modified: 2019-07-22 17:51:26" itemprop="dateModified" datetime="2019-07-22T17:51:26+08:00">2019-07-22</time>
               
             
           </span>
@@ -511,7 +511,7 @@
 <li>其他的还有图形文本 (Text)、注解 (Annotate)等其他描述</li>
 </ol>
 <p>详细的结构图如下图所示：</p>
-<p><img src="https://o8zyn0sct.qnssl.com/Python_Figure_Structure.png" alt="数据绘图基本结构"></p>
+<p><img src="https://github.com/absentm/gitRes/blob/master/NotePics/Python_Figure_Structure.png" alt="数据绘图基本结构"></p>
 <p>This figure powered by <a href="https://www.snipaste.com/" target="_blank" rel="noopener">Snipaste</a> .</p>
 <hr>
 <h2 id="绘图分类"><a href="#绘图分类" class="headerlink" title="绘图分类"></a>绘图分类</h2><p>Matplotlib API 中提供了常见的绘图类型，常用的包括如下：</p>
@@ -537,7 +537,7 @@
 <li>显示、保存绘图结果</li>
 </ul>
 <p>先给出一个完整的图结构吧，这个图主要是绘制 cos、sin、sqrt 函数图像，如下：</p>
-<p><img src="https://o8zyn0sct.qnssl.com/figure.png" alt="完整的常规图绘制结果"></p>
+<p><img src="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/figure.png" alt="完整的常规图绘制结果"></p>
 <h3 id="导包"><a href="#导包" class="headerlink" title="导包"></a>导包</h3><p>涉及到 matplotlib.pyplot、pylab 和 numpy，如：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> *</span><br></pre></td></tr></table></figure>
 <h3 id="准备数据"><a href="#准备数据" class="headerlink" title="准备数据"></a>准备数据</h3><p>numpy 常用来组织源数据:</p>
@@ -546,15 +546,15 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 绘制 3 条函数曲线</span></span><br><span class="line">plt.plot(x, y1, color=<span class="string">'blue'</span>, linewidth=<span class="number">1.5</span>, linestyle=<span class="string">'-'</span>, marker=<span class="string">'.'</span>, label=<span class="string">r'$y = cos&#123;x&#125;$'</span>)</span><br><span class="line"></span><br><span class="line">plt.plot(x, y2, color=<span class="string">'green'</span>, linewidth=<span class="number">1.5</span>, linestyle=<span class="string">'-'</span>, marker=<span class="string">'*'</span>, label=<span class="string">r'$y = sin&#123;x&#125;$'</span>)</span><br><span class="line"></span><br><span class="line">plt.plot(x, y3, color=<span class="string">'m'</span>, linewidth=<span class="number">1.5</span>, linestyle=<span class="string">'-'</span>, marker=<span class="string">'x'</span>, label=<span class="string">r'$y = \sqrt&#123;x&#125;$'</span>)</span><br></pre></td></tr></table></figure>
 <p><strong>1&gt; color 参数</strong></p>
 <p>包含基本的红(red, r)、绿(green, g)、蓝(blue, b)、黑(k)、青色(c)、洋红色(m)、黄色(y)、白色(w)及其衍生色，还可以使用 6 个 16 进制数表示（如，’#FF00CC’, ‘#ff00ff’）。</p>
-<p><img src="https://o8zyn0sct.qnssl.com/colormaps.png" alt="color 样式图"></p>
+<p><img src="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/colormaps.png" alt="color 样式图"></p>
 <p>color 参数图片由参考文献 [1] 提供。</p>
 <p><strong>2&gt; linestyle 参数</strong></p>
 <p>其中，linestyle 参数主要包含虚线、点化虚线、粗虚线、实线，表示符号见下图：</p>
-<p><img src="https://o8zyn0sct.qnssl.com/line_style.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/line_style.png" alt="linestyle 参数"></p>
 <p>linestyle 参数图片由参考文献 [1] 提供。</p>
 <p><strong>3&gt; marker 参数</strong></p>
 <p>在曲线上标记特殊的符号，以区分不同的线段，比较实用。常见的形状及表示符号如下图所示：</p>
-<p><img src="https://o8zyn0sct.qnssl.com/marks.png" alt="marker 样式图"></p>
+<p><img src="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/marks.png" alt="marker 样式图"></p>
 <p>marker 参数图片由参考文献 [1] 提供。</p>
 <h3 id="设置坐标轴"><a href="#设置坐标轴" class="headerlink" title="设置坐标轴"></a>设置坐标轴</h3><p>可通过如下代码，移动坐标轴 <strong>spines</strong>，解说详见注释：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 坐标轴上移</span></span><br><span class="line">ax = plt.subplot(<span class="number">111</span>)</span><br><span class="line">ax.spines[<span class="string">'right'</span>].set_color(<span class="string">'none'</span>)     <span class="comment"># 去掉右边的边框线</span></span><br><span class="line">ax.spines[<span class="string">'top'</span>].set_color(<span class="string">'none'</span>)       <span class="comment"># 去掉上边的边框线</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 移动下边边框线，相当于移动 X 轴</span></span><br><span class="line">ax.xaxis.set_ticks_position(<span class="string">'bottom'</span>)    </span><br><span class="line">ax.spines[<span class="string">'bottom'</span>].set_position((<span class="string">'data'</span>, <span class="number">0</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 移动左边边框线，相当于移动 y 轴</span></span><br><span class="line">ax.yaxis.set_ticks_position(<span class="string">'left'</span>)</span><br><span class="line">ax.spines[<span class="string">'left'</span>].set_position((<span class="string">'data'</span>, <span class="number">0</span>))</span><br></pre></td></tr></table></figure>
@@ -570,7 +570,7 @@
 <h3 id="设置图例"><a href="#设置图例" class="headerlink" title="设置图例"></a>设置图例</h3><p>可使用如下两种方式，给绘图设置图例：<br>1: 在 <strong>plt.plot</strong> 函数中添加 <strong>label</strong> 参数后，使用 plt.legend(loc=’up right’)<br>2: 不使用参数 label, 直接使用如下命令：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">plt.legend([<span class="string">'cos(x)'</span>, <span class="string">'sin(x)'</span>, <span class="string">'sqrt(x)'</span>], loc=<span class="string">'up right'</span>)</span><br></pre></td></tr></table></figure>
 <p><strong>loc</strong> 参数表示图例的位置，常见的位置参数如下：</p>
-<p><img src="https://o8zyn0sct.qnssl.com/legend.png" alt="legend loc 参数"></p>
+<p><img src="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/legend.png" alt="legend loc 参数"></p>
 <p>legend loc 参数图片由参考文献 [2] 提供。</p>
 <h3 id="网格线开关"><a href="#网格线开关" class="headerlink" title="网格线开关"></a>网格线开关</h3><p>可使用如下代码，给绘图设置网格线：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 显示网格线</span></span><br><span class="line">plt.grid(<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure>
@@ -584,7 +584,7 @@
 <h3 id="直方图"><a href="#直方图" class="headerlink" title="直方图"></a>直方图</h3><p>直方图，也即柱状图，使用 bar API 进行绘制</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#coding:utf-8</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">x_size = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">11</span>, <span class="number">13</span>]</span><br><span class="line">y_time_point = [<span class="number">0</span>, <span class="number">200</span>, <span class="number">415</span>, <span class="number">628</span>, <span class="number">714</span>, <span class="number">862</span>, <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">x_zhe = [<span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">11</span>]</span><br><span class="line">y_zhe = [<span class="number">200</span>, <span class="number">415</span>, <span class="number">628</span>, <span class="number">714</span>, <span class="number">862</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置刻度标签</span></span><br><span class="line">plt.xticks(x_zhe, (<span class="string">u"3"</span>, <span class="string">u"5"</span>, <span class="string">u"7"</span>, <span class="string">u"9"</span>, <span class="string">u"11"</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 绘制柱状图</span></span><br><span class="line">plt.bar(left = (x_size), height = (y_time_point), width = <span class="number">1.0</span>,</span><br><span class="line">	align=<span class="string">"center"</span>, facecolor = <span class="string">'lightskyblue'</span>,edgecolor = <span class="string">'white'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加文本解释</span></span><br><span class="line"><span class="keyword">for</span> x, y <span class="keyword">in</span> zip(x_zhe, y_zhe):</span><br><span class="line">    plt.text(x, y+<span class="number">10</span>, <span class="string">'%.0f'</span> % y, ha=<span class="string">'center'</span>, va= <span class="string">'bottom'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#设置y轴范围</span></span><br><span class="line">ylim(<span class="number">0</span>, <span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 画折线图</span></span><br><span class="line">plt.plot(x_zhe, y_zhe, <span class="string">'y.-'</span>)</span><br><span class="line">plt.title(<span class="string">'Time values change with Size'</span>)</span><br><span class="line">plt.xlabel(<span class="string">'Size'</span>)</span><br><span class="line">plt.ylabel(<span class="string">'Time (s)'</span>)</span><br><span class="line">plt.grid(<span class="keyword">True</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <p>以上代码可以得到如下直方图：</p>
-<p><img src="https://o8zyn0sct.qnssl.com/bar.png" alt="直方图"></p>
+<p><img src="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/bar.png" alt="直方图"></p>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>[1] <a href="http://www.labri.fr/perso/nrougier/teaching/matplotlib/#beyond-this-tutorial" target="_blank" rel="noopener">http://www.labri.fr/perso/nrougier/teaching/matplotlib/#beyond-this-tutorial</a><br>[2] <a href="http://www.bioinfo.org.cn/~casp/temp/spring.lecture/Matplotlib_slides.pdf" target="_blank" rel="noopener">http://www.bioinfo.org.cn/~casp/temp/spring.lecture/Matplotlib_slides.pdf</a><br>[3] <a href="http://matplotlib.org/api/pyplot_api.html" target="_blank" rel="noopener">http://matplotlib.org/api/pyplot_api.html</a><br>[4] <a href="http://python.jobbole.com/85106/" target="_blank" rel="noopener">http://python.jobbole.com/85106/</a><br>[5] <a href="http://mohu.org/info/symbols/symbols.htm" target="_blank" rel="noopener">http://mohu.org/info/symbols/symbols.htm</a></p>
 <hr>
 <h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><blockquote>
