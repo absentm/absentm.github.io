@@ -116,13 +116,13 @@
 <meta property="og:site_name" content="AbsentM&#39;s Notes">
 <meta property="og:description" content="故事昨儿，一天迷离。 手忙脚乱，写了一段代码；误打误撞，通过了测试用例；迷迷糊糊，提交入库了。 今儿醒来 review， 觉得是 bug， 结果却获得了意外… 因此就有了这个，一次由 python for/while-else 「 语法糖 」 引发的 「 深度学习 」。 故事开头是这样的： 判断一个「 , 」分割的字符串，如果是 None，则返回「 * 」；如果不是，则遍历验证每一个元素是否在列">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://o8zyn0sct.qnssl.com/python-loop-else-Q1.png">
-<meta property="og:image" content="https://o8zyn0sct.qnssl.com/python-loop-else-Q2.png">
-<meta property="og:updated_time" content="2018-03-19T00:43:46.219Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/python-loop-else-Q1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/python-loop-else-Q2.png">
+<meta property="og:updated_time" content="2019-07-22T08:17:13.634Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一次由 python for、while-else 语法糖引发的深度学习">
 <meta name="twitter:description" content="故事昨儿，一天迷离。 手忙脚乱，写了一段代码；误打误撞，通过了测试用例；迷迷糊糊，提交入库了。 今儿醒来 review， 觉得是 bug， 结果却获得了意外… 因此就有了这个，一次由 python for/while-else 「 语法糖 」 引发的 「 深度学习 」。 故事开头是这样的： 判断一个「 , 」分割的字符串，如果是 None，则返回「 * 」；如果不是，则遍历验证每一个元素是否在列">
-<meta name="twitter:image" content="https://o8zyn0sct.qnssl.com/python-loop-else-Q1.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/python-loop-else-Q1.png">
 
 
 
@@ -405,7 +405,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-03-19 08:43:46" itemprop="dateModified" datetime="2018-03-19T08:43:46+08:00">2018-03-19</time>
+                <time title="Modified: 2019-07-22 16:17:13" itemprop="dateModified" datetime="2019-07-22T16:17:13+08:00">2019-07-22</time>
               
             
           </span>
@@ -486,13 +486,13 @@
 <p>故事开头是这样的：</p>
 <p>判断一个「 , 」分割的字符串，如果是 None，则返回「 * 」；如果不是，则遍历验证每一个元素是否在列表中，不存在则错误输出，存在则返回列表。</p>
 <p>非常简单的逻辑，可我写成了这个样子：</p>
-<p><img src="https://o8zyn0sct.qnssl.com/python-loop-else-Q1.png" alt="Python loop with else Question"></p>
+<p><img src="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/python-loop-else-Q1.png" alt="Python loop with else Question"></p>
 <p>写过一段 C/C++ 或者 Java 的我，review 时看到这个，瞬间懵逼了。</p>
 <p>bug 呀，那个 else 不应该出现呀，缩进应该往前提一下呀，语法错误呀…</p>
 <p>可是测试用例的处理逻辑却跑的没问题呀，二脸懵逼… </p>
 <p>赶紧 Google…</p>
 <h2 id="Python-for-while-else-语法"><a href="#Python-for-while-else-语法" class="headerlink" title="Python for/while-else 语法"></a>Python for/while-else 语法</h2><p>搜索文档才发现：</p>
-<p><img src="https://o8zyn0sct.qnssl.com/python-loop-else-Q2.png" alt="Python loop with else doc"></p>
+<p><img src="https://raw.githubusercontent.com/absentm/gitRes/master/NotePics/python-loop-else-Q2.png" alt="Python loop with else doc"></p>
 <p>Python 的 for…else 和 while…else 语法，是 Python 中最不常用、最为误解的语法特性之一。</p>
 <p>Python 中的 for、while 循环都可以有一个可选的 else 分支（类似 if 语句和 try 语句那样），在循环迭代正常完成之后执行。也就是说，如果我们不是以非正常方式以外的其他任意方式退出循环，那么 else 分支将被执行。也就是在循环体内没有 break 语句、没有 return 语句，或者没有异常出现。</p>
 <p>那么，写一个 demo 测试一下这个语法糖吧。</p>
