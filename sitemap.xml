@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://absentm.github.io/2016/09/23/The-note-of-Firefox-Foxyproxy-Shadowsocks-settings/</loc>
+    
+    <lastmod>2019-07-22T10:55:28.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://absentm.github.io/2016/10/26/Life-is-around/</loc>
+    
+    <lastmod>2019-07-22T10:48:13.441Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://absentm.github.io/2016/11/21/Android-RecyclerView-Demo/</loc>
     
     <lastmod>2019-07-22T10:28:47.119Z</lastmod>
@@ -156,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/04/05/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A2%98%E7%9B%AE%E6%95%B4%E7%90%86%E5%8F%8A%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%89%EF%BC%89/</loc>
+    <loc>https://absentm.github.io/2016/04/03/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A2%98%E7%9B%AE%E6%95%B4%E7%90%86%E5%8F%8A%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
     
     <lastmod>2017-11-21T11:44:44.756Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/04/03/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A2%98%E7%9B%AE%E6%95%B4%E7%90%86%E5%8F%8A%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    <loc>https://absentm.github.io/2016/04/05/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A2%98%E7%9B%AE%E6%95%B4%E7%90%86%E5%8F%8A%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%89%EF%BC%89/</loc>
     
     <lastmod>2017-11-21T11:44:44.756Z</lastmod>
     
@@ -226,13 +240,6 @@
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/06/18/%E5%85%B3%E4%BA%8E/</loc>
-    
-    <lastmod>2017-11-21T11:44:44.750Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://absentm.github.io/2015/12/02/python%E5%AE%89%E8%A3%85%E7%AE%80%E8%AE%B0/</loc>
     
     <lastmod>2017-11-21T11:44:44.750Z</lastmod>
@@ -247,14 +254,21 @@
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/03/19/Ubuntu14-04-LTS-%E7%B3%BB%E7%BB%9F%E4%B8%ADOpencv-3-0%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://absentm.github.io/2016/06/18/%E5%85%B3%E4%BA%8E/</loc>
+    
+    <lastmod>2017-11-21T11:44:44.750Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://absentm.github.io/2016/06/18/hello-new-world/</loc>
     
     <lastmod>2017-11-21T11:44:44.749Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/06/18/hello-new-world/</loc>
+    <loc>https://absentm.github.io/2016/03/19/Ubuntu14-04-LTS-%E7%B3%BB%E7%BB%9F%E4%B8%ADOpencv-3-0%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2017-11-21T11:44:44.749Z</lastmod>
     
@@ -292,20 +306,6 @@
     <loc>https://absentm.github.io/2016/07/19/The-notes-of-installing-caffe-on-ubuntu14-04-without-GPU-and-CUDA/</loc>
     
     <lastmod>2017-11-21T11:44:44.746Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://absentm.github.io/2016/09/23/The-note-of-Firefox-Foxyproxy-Shadowsocks-settings/</loc>
-    
-    <lastmod>2017-11-21T11:44:44.745Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://absentm.github.io/2016/10/26/Life-is-around/</loc>
-    
-    <lastmod>2017-11-21T11:44:44.743Z</lastmod>
     
   </url>
   
