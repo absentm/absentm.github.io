@@ -118,7 +118,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://img.blog.csdn.net/20160614184116671">
 <meta property="og:image" content="http://img.blog.csdn.net/20160614192759250">
-<meta property="og:updated_time" content="2019-07-23T06:08:09.013Z">
+<meta property="og:updated_time" content="2019-07-23T06:09:44.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深度学习中的 Data Augmentation 方法和代码实现">
 <meta name="twitter:description" content="前言在深度学习中，为了避免出现过拟合（Overfitting），通常我们需要输入充足的数据量．为了得到更加充足的数据，我们通常需要对原有的图像数据进行几何变换，改变图像像素的位置并保证特征不变. 本页面主要记录下常用的数据增强（Data Augmentation）变换方法及其实现．   数据增强变换（Data Augmentation Transformation）不同的任务背景下, 我们可以通">
@@ -405,7 +405,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-07-23 14:08:09" itemprop="dateModified" datetime="2019-07-23T14:08:09+08:00">2019-07-23</time>
+                <time title="Modified: 2019-07-23 14:09:44" itemprop="dateModified" datetime="2019-07-23T14:09:44+08:00">2019-07-23</time>
               
             
           </span>
@@ -500,7 +500,7 @@
 <p>$$ \其中: α_i 是满足均值为 0， 方差为 0.1 的随机变量 $$　</p>
 <p><strong>注意</strong>： 几何变换不改变像素值，而是改变像素所在的位置。通过 Data Augmentation 方法扩张了数据集的范围，作为输入时，以期待网络学习到更多的图像不变性特征。</p>
 <hr>
-<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>作为实现部分，这里介绍一下在 python 环境下，利用已有的开源代码库<strong>Keras</strong>作为实践:</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>作为实现部分，这里介绍一下在 python 环境下，利用已有的开源代码库 <strong>Keras</strong> 作为实践:</p>
 <p><strong><em>Keras: Deep Learning library for Theano and TensorFlow</em></strong></p>
 <blockquote>
 <p>Keras is a minimalist, highly modular neural networks library, written in Python and capable of running on top of either TensorFlow or Theano. It was developed with a focus on enabling fast experimentation. Being able to go from idea to result with the least possible delay is key to doing good research.</p>
@@ -1572,6 +1572,13 @@
   
 
   
+  
+
+  
+  
+
+  
+
 
   
   
