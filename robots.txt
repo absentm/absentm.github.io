@@ -1,8 +1,9 @@
-er-agent: *
+User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /about/
+Allow: /tags/
 
 Disallow: /vendors/
 Disallow: /js/
@@ -12,3 +13,4 @@ Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: http://absentm.github.io/sitemap.xml
+Sitemap: https://absentm.github.io/baidusitemap.xml
