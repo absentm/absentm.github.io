@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://absentm.github.io/2016/06/19/Git-GitHub-Hexo%E6%90%AD%E5%BB%BA%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2%E4%B9%8B%E7%BB%BC%E8%BF%B0/</loc>
+    <loc>https://absentm.github.io/2016/06/19/%E5%86%99%E5%9C%A8%E7%88%B6%E4%BA%B2%E8%8A%82/</loc>
     
-    <lastmod>2019-07-22T11:24:28.918Z</lastmod>
+    <lastmod>2019-07-23T03:29:47.634Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://absentm.github.io/2016/12/30/In-me-past-present-future-meet/</loc>
     
-    <lastmod>2019-07-22T11:22:11.924Z</lastmod>
+    <lastmod>2019-07-23T02:57:34.894Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://absentm.github.io/2016/06/19/Git-GitHub-Hexo%E6%90%AD%E5%BB%BA%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2%E4%B9%8B%E7%BB%BC%E8%BF%B0/</loc>
+    
+    <lastmod>2019-07-22T11:24:28.918Z</lastmod>
     
   </url>
   
@@ -170,14 +177,14 @@
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/06/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84Data-Augmentation%E6%96%B9%E6%B3%95%E5%92%8C%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/</loc>
+    <loc>https://absentm.github.io/2016/08/09/%E7%9B%B8%E7%89%87/</loc>
     
     <lastmod>2017-11-21T11:44:44.758Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/08/09/%E7%9B%B8%E7%89%87/</loc>
+    <loc>https://absentm.github.io/2016/06/14/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E4%B8%AD%E7%9A%84Data-Augmentation%E6%96%B9%E6%B3%95%E5%92%8C%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/</loc>
     
     <lastmod>2017-11-21T11:44:44.758Z</lastmod>
     
@@ -191,14 +198,14 @@
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/04/05/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A2%98%E7%9B%AE%E6%95%B4%E7%90%86%E5%8F%8A%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%89%EF%BC%89/</loc>
+    <loc>https://absentm.github.io/2016/04/03/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A2%98%E7%9B%AE%E6%95%B4%E7%90%86%E5%8F%8A%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
     
     <lastmod>2017-11-21T11:44:44.756Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/04/03/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A2%98%E7%9B%AE%E6%95%B4%E7%90%86%E5%8F%8A%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    <loc>https://absentm.github.io/2016/04/05/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%A2%98%E7%9B%AE%E6%95%B4%E7%90%86%E5%8F%8A%E8%AF%A6%E8%A7%A3%EF%BC%88%E4%B8%89%EF%BC%89/</loc>
     
     <lastmod>2017-11-21T11:44:44.756Z</lastmod>
     
@@ -233,13 +240,6 @@
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/06/19/%E5%86%99%E5%9C%A8%E7%88%B6%E4%BA%B2%E8%8A%82/</loc>
-    
-    <lastmod>2017-11-21T11:44:44.751Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://absentm.github.io/2016/08/27/%E5%85%B3%E4%BA%8E3%E5%B1%82for%E5%BE%AA%E7%8E%AF%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%E7%9A%84%E8%AE%A8%E8%AE%BA/</loc>
     
     <lastmod>2017-11-21T11:44:44.751Z</lastmod>
@@ -268,14 +268,14 @@
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/06/18/hello-new-world/</loc>
+    <loc>https://absentm.github.io/2016/03/19/Ubuntu14-04-LTS-%E7%B3%BB%E7%BB%9F%E4%B8%ADOpencv-3-0%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2017-11-21T11:44:44.749Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://absentm.github.io/2016/03/19/Ubuntu14-04-LTS-%E7%B3%BB%E7%BB%9F%E4%B8%ADOpencv-3-0%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://absentm.github.io/2016/06/18/hello-new-world/</loc>
     
     <lastmod>2017-11-21T11:44:44.749Z</lastmod>
     
