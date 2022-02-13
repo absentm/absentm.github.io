@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next mist" lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+  <meta charset="UTF-8">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Monaco:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar_favicon.ico?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar_favicon.ico?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+  <meta name="description" content="¶前言 计算机专业的童鞋们大多遇到好多需要帮忙装系统的经历，每次都是不胜其烦。其实，对于但凡有点电脑使用经验的童鞋来说，现在安装或者重装系统，就显得特别简单了。这里做一个稍作详细点的整合教程记录，以后有装系统的差事，就可以分享链接让他们自己学着安装了。 本教程适用于windows7、windows8及8.1、windows10系列系统的安装，亲测！  ¶准备工作 1: 一台能上网的电脑 需要一台完">
+<meta name="keywords" content="Windows,系统安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用优盘安装 Windows 系统教程">
+<meta property="og:url" content="https://absentm.github.io/2018/03/28/使用U盘安装windows系统教程/index.html">
+<meta property="og:site_name" content="AbsentM&#39;s Notes">
+<meta property="og:description" content="¶前言 计算机专业的童鞋们大多遇到好多需要帮忙装系统的经历，每次都是不胜其烦。其实，对于但凡有点电脑使用经验的童鞋来说，现在安装或者重装系统，就显得特别简单了。这里做一个稍作详细点的整合教程记录，以后有装系统的差事，就可以分享链接让他们自己学着安装了。 本教程适用于windows7、windows8及8.1、windows10系列系统的安装，亲测！  ¶准备工作 1: 一台能上网的电脑 需要一台完">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-default.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-sure.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-wait.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-mock.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-mock.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-bios.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-usb.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-laomaotao.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-DiskGenius.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-diskNums.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-formatdisks.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-finished.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-loadimages.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-rollback.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-show.png">
+<meta property="og:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-active.png">
+<meta property="og:updated_time" content="2022-02-13T11:15:11.012Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用优盘安装 Windows 系统教程">
+<meta name="twitter:description" content="¶前言 计算机专业的童鞋们大多遇到好多需要帮忙装系统的经历，每次都是不胜其烦。其实，对于但凡有点电脑使用经验的童鞋来说，现在安装或者重装系统，就显得特别简单了。这里做一个稍作详细点的整合教程记录，以后有装系统的差事，就可以分享链接让他们自己学着安装了。 本教程适用于windows7、windows8及8.1、windows10系列系统的安装，亲测！  ¶准备工作 1: 一台能上网的电脑 需要一台完">
+<meta name="twitter:image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-default.png">
+
+
+
+
+
+
+  <link rel="canonical" href="https://absentm.github.io/2018/03/28/使用U盘安装windows系统教程/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>使用优盘安装 Windows 系统教程 | AbsentM's Notes</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?021d64369b3c401c47c6ab7aa56f7074";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AbsentM's Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-timeline">
+    <a href="/timeline/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Timeline</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://absentm.github.io/2018/03/28/使用U盘安装windows系统教程/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="AbsentM">
+      <meta itemprop="description" content="Avenue to Jane!">
+      <meta itemprop="image" content="https://gitee.com/absentm/gitRes/raw/master/NotePics/googlrPhoto.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AbsentM's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">使用优盘安装 Windows 系统教程
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-03-28 21:36:48" itemprop="dateCreated datePublished" datetime="2018-03-28T21:36:48+08:00">2018-03-28</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/03/28/使用U盘安装windows系统教程/" class="leancloud_visitors" data-flag-title="使用优盘安装 Windows 系统教程">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Views: </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">7.5k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">7 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="前言"><a class="header-anchor" href="#前言">¶</a>前言</h2>
+<p>计算机专业的童鞋们大多遇到好多需要帮忙装系统的经历，每次都是不胜其烦。其实，对于但凡有点电脑使用经验的童鞋来说，现在安装或者重装系统，就显得特别简单了。这里做一个稍作详细点的整合教程记录，以后有装系统的差事，就可以分享链接让他们自己学着安装了。</p>
+<p>本教程适用于windows7、windows8及8.1、windows10系列系统的安装，亲测！</p>
+<hr>
+<h2 id="准备工作"><a class="header-anchor" href="#准备工作">¶</a>准备工作</h2>
+<p>1: 一台能上网的电脑</p>
+<p>需要一台完好的且能上网的电脑来帮助我们做接下来的准备工作以及U盘启动的制作。</p>
+<p>2: U盘</p>
+<p>自备啊，需要准备一个4G及以上内存大小的U盘，推荐使用8G大小的，使用前请备份好u盘内资料，因为制作启动盘的过程需要格式化U盘。</p>
+<p>3: windows系统镜像</p>
+<p>在网上下载好所需要安装系统的镜像文件：XXX.iso格式的文件（如：<code>cn_windows_7_ultimate_x64_dvd_x15-66043.iso</code>）。这里给出<strong>MSDN，我告诉你</strong>提供的纯天然的镜像文件地址，推荐到这里下载哦：<a href="http://www.itellyou.cn/" target="_blank" rel="noopener">MSDN windows系统镜像文件下载地址</a>。</p>
+<p>4: 老毛桃装机软件<br>
+百度搜索：<strong>老毛桃</strong>，进入官网下载老毛桃装机软件，附上官网：<a href="http://www.laomaotao.in/" target="_blank" rel="noopener">老毛桃官网</a>，下载软件后安装到自己的电脑上，准备以后制作启动盘。</p>
+<p>5: 系统激活工具<br>
+这个主要是安装的系统大多都是没有激活的，安装系统完成后需要激活系统，这里推荐使用<strong>小马哥的一键激活</strong>，自行百度。</p>
+<hr>
+<h2 id="制作U盘启动盘"><a class="header-anchor" href="#制作U盘启动盘">¶</a>制作U盘启动盘</h2>
+<p>（1）、将准备好的U盘插在能上网的电脑上，双击安装过的老毛桃装机软件，出现如下界面，使用<strong>默认模式</strong>，软件将自动识别到插入的U盘，若未识别，则手动添加U盘。如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-default.png" alt="Windows-install-default"></p>
+<p>（2）、然后点击“一键制作启动U盘”按钮即可，此时会弹出一个警告框，提示将删除u盘中的所有数据。在确认已经将重要数据做好备份的情况下，我们点击“确定”。如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-sure.png" alt="Windows-install-sure"></p>
+<p>（3）、接下来程序开始制作u盘启动盘，整个过程可能需要几分钟，大家在此期间切勿进行其他操作，如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-wait.png" alt="Windows-install-wait"></p>
+<p>（4）、U盘启动盘制作完成后，会弹出一个窗口，询问是否要启动电脑模拟器测试u盘启动情况，我们点击“是（Y）”，如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-mock.png" alt="Windows-install-mock"></p>
+<p>（5）、启动“电脑模拟器”后我们就可以看到u盘启动盘在模拟环境下的正常启动界面了，按下键盘上的“Ctrl+Alt”组合键释放鼠标,最后可以点击右上角的关闭图标退出模拟启动界面，如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-mock.png" alt="Windows-install-mock-q"></p>
+<p>到此为止，老毛桃装机版u盘启动盘制作过程就结束了。之后我们需要将下载好的windowsXXX.iso镜像文件一同拷贝到U盘中，准备一会的系统安装使用。</p>
+<hr>
+<h2 id="运行老毛桃PE系统"><a class="header-anchor" href="#运行老毛桃PE系统">¶</a>运行老毛桃PE系统</h2>
+<p>本部分主要说明如何设置待修电脑BIOS设置U盘为第一启动项，之后进入老毛桃PE系统，进行安装系统说明。</p>
+<h3 id="设置BIOS-U盘为第一启动项"><a class="header-anchor" href="#设置BIOS-U盘为第一启动项">¶</a>设置BIOS U盘为第一启动项</h3>
+<p>（1）、首先将制作好的老毛桃启动U盘插入到待安装系统的电脑上，在开启电脑后按下启动快捷键引导u盘启动，可在BIOS中进行设置，各个不同的主板使用的快捷键不同，常见型号的BIOS快捷键如下链接所示：<a href="http://www.laomaotao.in/softhelp/bios/1032.html" target="_blank" rel="noopener">不同电脑启动BIOS快捷键大全</a>。进入boot菜单界面后，通过键盘上的上下方向键将光标移至“Boot Device Priority”选项，按Enter键打开子菜单。如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-bios.png" alt="Windows-install-bios"></p>
+<p>（2）、接着我们只需在子菜单中找到u盘对应的选项，然后通过键盘上的“+”、“-”键将其调节到最上方，作为开机第一启动项即可，并按F10键保存设置。随后会弹出一个窗口，选择“OK”即可。如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-usb.png" alt="Windows-install-usb"></p>
+<p>（3）、完成开机启动设置后重启电脑，便会自动进入到老毛桃主菜单页面。这样我们便可以如愿在电脑上使用老毛桃u盘启动盘解决遇到的问题了。</p>
+<p>本部分可以参考这一链接进行设置：<a href="http://www.laomaotao.in/softhelp/bios/865.html" target="_blank" rel="noopener">将u盘启动盘设置为开机首选方法</a>。</p>
+<hr>
+<h3 id="进入老毛桃PE系统"><a class="header-anchor" href="#进入老毛桃PE系统">¶</a>进入老毛桃PE系统</h3>
+<p>（1）、如果以上过程成功的话，就会进入如下老毛桃主菜单界面，进入老毛桃主菜单界面后，将光标移至“【02】运行老毛桃 Win2003PE系统(装机推荐)”后按回车键确认，如下图：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-laomaotao.png" alt="Windows-install-laomaotao"></p>
+<hr>
+<h3 id="分区（如果不需要分区操作的可以跳过这一步）"><a class="header-anchor" href="#分区（如果不需要分区操作的可以跳过这一步）">¶</a>分区（如果不需要分区操作的可以跳过这一步）</h3>
+<p>（1）、如果电脑需要重新分区的话，可使用老毛桃PE系统自带的DiskGenius分区工具进行快速分区。进入pe系统桌面后，鼠标左键双击打开DiskGenius分区工具，在工具主窗口中，点击“快速分区”，如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-DiskGenius.png" alt="Windows-install-DiskGenius"></p>
+<p>（2）、随后会弹出快速分区设置窗口，在这里，我们可以设置分区表类型、分区数目以及文件系统大小。完成设置后，点击“确定”按钮即可，如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-diskNums.png" alt="Windows-install-diskNums"></p>
+<p>（3）、接着工具便会进行格式化分区操作，将磁盘按照设置分配成多个文件系统，如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-formatdisks.png" alt="Windows-install-formatdisks"></p>
+<p>（4）、待快速分区操作完成后，通过工具磁盘列表或打开我的电脑，可以发现磁盘分区已经设置好了，如下图所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-finished.png" alt="Windows-install-finished"></p>
+<hr>
+<h3 id="U盘开始安装系统"><a class="header-anchor" href="#U盘开始安装系统">¶</a>U盘开始安装系统</h3>
+<p>（1）、完成以上操作后，双击桌面上的<strong>老毛桃PE一键装机</strong>工具，程序会自动检测硬盘分区中存在符合条件的系统镜像文件并且显示出来以我们供选择，若工具没有识别到您所存放的用于安装系统的镜像文件，则可以通过点击右边的“更多”按钮进入深层目录进行选择，即之前我们下载好的.iso格式文件。如下图：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-loadimages.png" alt="Windows-install-loadimages"></p>
+<p>（2）、当选择所准备好的原版win7系统镜像文件后，会出现5个不同的win7版本选择，在此我们选择其中的win7旗舰版进行安装，如有特殊版本喜好，您可以自行选择其他版本。接着我们需要在下方硬盘分区列表当中选择一个硬盘分区做为安装系统时所需要占用的分区，在此我们默认选择下方第一个分区即可。点击确定按钮会进入到下一步操作步骤，我们无需对下方的选项进行任何修改操作，直接点击确定即可执行安装操作。如下图：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-rollback.png" alt="Windows-install-rollback"></p>
+<p>（3）、随后工具会先将我们所准备的原版win7系统镜像包解压到特定的分区，待解压工作完成后将自动重启计算机进行后续的系统安装步骤。如下图：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-show.png" alt="Windows-install-show"></p>
+<p>（4）、<strong>结束以上步骤后，基本上就使用U盘完成了系统的安装，再次重启电脑，别忘了，把U盘弹出，或者干脆设置BIOS启动项为硬盘启动，这样便可以防止开机自动加载U盘。</strong></p>
+<hr>
+<h3 id="系统激活"><a class="header-anchor" href="#系统激活">¶</a>系统激活</h3>
+<p>安装完系统，下载驱动程序安装或更新驱动程序，然后检查下控制面板系统是否激活？位置在：控制面板\系统和安全\系统；若没有激活自行百度使用小马哥激活工具，激活系统，完成后如下所示：</p>
+<p><img src="https://gitee.com/absentm/gitRes/raw/master/NotePics/Windows-install-active.png" alt="Windows-install-active"></p>
+<hr>
+<p>@@@@@@@@ ---- 那么，到这里，整个系统的安装过程就完成了。 ---- @@@@@@@@</p>
+<hr>
+<h2 id="参考资料"><a class="header-anchor" href="#参考资料">¶</a>参考资料</h2>
+<p>（1）: <a href="http://www.itellyou.cn/" target="_blank" rel="noopener">http://www.itellyou.cn/</a><br>
+（2）: <a href="http://www.laomaotao.in/" target="_blank" rel="noopener">http://www.laomaotao.in/</a><br>
+（3）: <a href="http://www.laomaotao.in/softhelp/bios/1032.html" target="_blank" rel="noopener">http://www.laomaotao.in/softhelp/bios/1032.html</a><br>
+（4）: <a href="http://www.laomaotao.in/softhelp/bios/865.html" target="_blank" rel="noopener">http://www.laomaotao.in/softhelp/bios/865.html</a><br>
+（5）: <a href="http://www.laomaotao.in/lmtjc/772.html" target="_blank" rel="noopener">http://www.laomaotao.in/lmtjc/772.html</a><br>
+（6）: <a href="http://www.laomaotao.org/jiaocheng/92/upqdzz.html" target="_blank" rel="noopener">http://www.laomaotao.org/jiaocheng/92/upqdzz.html</a><br>
+（7）: <a href="http://www.laomaotao.org/jiaocheng/92/upqdzz.html" target="_blank" rel="noopener">http://www.laomaotao.org/jiaocheng/92/upqdzz.html</a><br>
+（8）: <a href="http://www.laomaotao.org/softhelp/syjc/10.html" target="_blank" rel="noopener">http://www.laomaotao.org/softhelp/syjc/10.html</a></p>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>AbsentM</li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://absentm.github.io/2018/03/28/使用U盘安装windows系统教程/" title="使用优盘安装 Windows 系统教程">https://absentm.github.io/2018/03/28/使用U盘安装windows系统教程/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> unless stating additionally.</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Windows/" rel="tag"># Windows</a>
+          
+            <a href="/tags/系统安装/" rel="tag"># 系统安装</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/12/Ubuntu-14-04-LTS-安装与配置/" rel="next" title="Ubuntu 14.04 LTS 安装与配置">
+                <i class="fa fa-chevron-left"></i> Ubuntu 14.04 LTS 安装与配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/18/hello-new-world/" rel="prev" title="Hello new world">
+                Hello new world <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://gitee.com/absentm/gitRes/raw/master/NotePics/googlrPhoto.png" alt="AbsentM">
+            
+              <p class="site-author-name" itemprop="name">AbsentM</p>
+              <p class="site-description motion-element" itemprop="description">Avenue to Jane!</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">60</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">37</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/absentm" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/absentm123" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/dmicrocosmos" target="_blank" title="Weibo" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">¶前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">¶准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#制作U盘启动盘"><span class="nav-number">3.</span> <span class="nav-text">¶制作U盘启动盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行老毛桃PE系统"><span class="nav-number">4.</span> <span class="nav-text">¶运行老毛桃PE系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置BIOS-U盘为第一启动项"><span class="nav-number">4.1.</span> <span class="nav-text">¶设置BIOS U盘为第一启动项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入老毛桃PE系统"><span class="nav-number">4.2.</span> <span class="nav-text">¶进入老毛桃PE系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分区（如果不需要分区操作的可以跳过这一步）"><span class="nav-number">4.3.</span> <span class="nav-text">¶分区（如果不需要分区操作的可以跳过这一步）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#U盘开始安装系统"><span class="nav-number">4.4.</span> <span class="nav-text">¶U盘开始安装系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统激活"><span class="nav-number">4.5.</span> <span class="nav-text">¶系统激活</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">5.</span> <span class="nav-text">¶参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+      <!-- require APlayer -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script> -->
+
+      <!-- require MetingJS-->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script> -->
+
+      <!--netease-->
+      <!-- <div class="aplayer"
+        data-id="7219326658"
+        data-server="netease"
+        data-type="playlist"
+        data-fixed="false"
+        data-autoplay="false"
+        data-list-folded="true"
+        data-mutex="true"
+        data-order="random"
+        data-loop="all"
+        data-theme="#ad7a86"
+        date-preload="auto" >
+      </div> -->
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2022</span>
+  <span id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">AbsentM</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="Symbols count total">Word.Count.Total: 281k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="Reading time total"></span>
+  
+
+  
+    
+  
+
+  
+    <div class="powered-by">Powered by <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> v3.7.1</div>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <div class="theme-info">Theme – <a class="theme-link" target="_blank" rel="external nofollow" href="https://theme-next.org">NexT.Mist</a> v6.3.0</div>
+  
+</div>
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("8gIMbJWMH7XprqgkEiPWXvuu-gzGzoHsz", "W9NRpyhllWph45XiJsEHVgct");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            
+            counter.save(null, {
+              success: function(counter) {
+                
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            
+              var newcounter = new Counter();
+              /* Set ACL */
+              var acl = new AV.ACL();
+              acl.setPublicReadAccess(true);
+              acl.setPublicWriteAccess(true);
+              newcounter.setACL(acl);
+              /* End Set ACL */
+              newcounter.set("title", title);
+              newcounter.set("url", url);
+              newcounter.set("time", 1);
+              newcounter.save(null, {
+                success: function(newcounter) {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                },
+                error: function(newcounter, error) {
+                  console.log('Failed to create');
+                }
+              });
+            
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('Copied')
+          else $(this).text('Copy failed')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('Copy')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+</body>
+</html>
